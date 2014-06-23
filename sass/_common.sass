@@ -55,6 +55,8 @@ $dark-green: #76b601
 $gray: #aaa
 $light-gray: #ddd
 $pink: #f7b8ab
+$gray-yellow: #fdefd3
+$brown: #af9d68
 
 body
 	font-size: 14px 
@@ -164,16 +166,78 @@ body
 	.soc
 		padding-bottom: 18px
 
+//breadcrumbs
+.breadcrumbs
+	margin-bottom: 15px
+	font-size: 0
+	+sn
+	li
+		position: relative
+		padding-left: 18px
+		display: inline-block
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 5px
+			margin-top: -1px
+			width: 8px
+			height: 2px
+			background: $light-gray
+		&:first-child
+			padding-left: 0
+			&:before
+				display: none
+	a
+		color: $green
+		font-size: 18px
+		line-height: 1
+		font-weight: 700
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+
+//pagination
+.pagination
+	padding-top: 18px
+	font-size: 0
+	text-align: center
+	li
+		margin-right: 8px
+		display: inline-block
+		&.is-active,
+		&:hover
+			a
+				color: $white
+				background: $dark-green
+		&.no-active
+			a
+				background: none
+				color: $black
+	a
+		height: 30px
+		line-height: 30px
+		width: 30px
+		color: $black
+		font-size: 18px
+		font-weight: 700
+		text-align: center
+		text-decoration: none
+		display: inline-block
+		+border-radius(50%)
+		+sn
+
 //title
 .title
 	font-size: 30px
 	font-weight: 700
+	line-height: 1
 	font-style: italic
 	span
 		position: relative
 		padding: 0 30px
 		overflow: hidden
-		z-index: 2
+		z-index: 1
 		background: $white
 		display: inline-block
 	&.title_center
@@ -185,7 +249,7 @@ body
 			top: 50%
 			left: 0
 			right: 0
-			margin-top: -5px
+			margin-top: -1.5px
 			height: 3px
 			background: $light-gray
 
@@ -273,6 +337,10 @@ body
 		+s(f-logo)
 	&.ico_comment
 		+s(comment-grey)
+	&.ico_comment-w
+		+s(comment-white)
+	&.ico_more
+		+s(more)
 
 //logo	 
 .logo
@@ -382,7 +450,7 @@ body
 			a
 				background: $red
 				color: $white
-		&.is-active
+		&.is-drop
 			&:before
 				position: absolute
 				content: ''
@@ -411,11 +479,12 @@ body
 		font-size: 18px
 		text-transform: uppercase
 		text-decoration: none
+		+sn
 	.menu__list
 		position: absolute
 		padding-right: 0
 		top: 100%
-		right: -88px
+		right: -76px
 		a
 			font-size: 16px
 			font-weight: 700 !important
@@ -428,8 +497,9 @@ body
 	.nav__item
 		position: relative
 		a
-			padding: 10px 10px 10px 28px
+			padding: 9px 10px 9px 28px
 			color: $black
+			line-height: 1
 			text-decoration: none
 			font-size: 18px
 			font-weight: 700
@@ -446,21 +516,25 @@ body
 			display: none
 			background: $red
 		&:hover
-			a
-				color: $red
-		&.is-active
-			&:hover
-				background: $red
-				&:before
-					display: block
-				.nav__list
-					display: inline-block
-				a
-					color: $white
+			&:before
+				display: block
 	.nav__list
 		padding: 20px 120px 20px 0
 		left: 100%
-		bottom: -107px
+		bottom: -80px
+
+//menu, nav	
+.menu, .nav
+	.menu__item, .nav__item
+		&.is-active
+			a
+				color: $red
+		&:hover
+			background: $red
+			a
+				color: $white
+			.drop
+				display: inline-block
 
 //popularly
 .popularly
@@ -538,6 +612,8 @@ body
 		text-decoration: underline
 	&.comment_grey
 		color: $gray
+	&.comment_white
+		color: $white
 
 // rating
 .rating
@@ -573,6 +649,8 @@ body
 			height: 3px
 			width: 40px
 			background: $light-gray
+		&.rating__top_red
+			background: url(../img/rating-bg-2.png) no-repeat 50% 0
 	.rating__title
 		margin-top: -30px
 		margin-bottom: 10px
@@ -607,6 +685,9 @@ body
 	img
 		width: 100%
 		display: block
+	&.banner_top
+		margin: 0 auto
+		width: 728px
 //date
 .date
 	padding: 8px 0
@@ -615,7 +696,7 @@ body
 
 //discussion
 .discussion
-	padding: 30px 22px 10px
+	padding: 20px 22px 10px
 	color: $white
 	background: $red
 	.discussion__title
@@ -629,7 +710,7 @@ body
 			&:first-child
 				border: none
 	.discussion__item
-		padding: 30px 0
+		padding: 23px 0
 		border-top: 3px solid $white
 	.discussion__user
 		color: $white
@@ -688,7 +769,7 @@ body
 //delivery
 .delivery
 	margin-bottom: 40px
-	padding: 30px
+	padding: 26px 26px 23px
 	text-align: center
 	background: $light-green
 	+box
@@ -721,6 +802,7 @@ body
 
 //btn
 .btn
+	position: relative
 	padding: 10px 20px
 	color: $white
 	font-size: 18px
@@ -733,6 +815,25 @@ body
 		+box-shadow(inset 0 2px 4px rgba(0,0,0,.25))
 	&.btn_green
 		background: $green
+	&.btn_more	
+		padding: 0 0 0 40px
+		color: $black
+		font-size: 30px
+		font-weight: 700
+		font-style: italic
+		line-height: 1
+		background: none
+		+box-shadow(none)
+		+sr
+		.ico
+			position: absolute
+			top: 0
+			left: 0
+			+transition(0.7s)
+		&:active
+			.ico
+				+rotate(-360)
+
 
 //dish
 .dish
@@ -740,7 +841,7 @@ body
 	padding: 190px 27px 25px
 	color: $white
 	vertical-align: bottom
-	background-size: cover
+	background-size: cover !important
 	+box-shadow(inset 0 -190px 100px -40px rgba(0, 0, 0, 0.7))
 	+box
 	+sn
@@ -776,3 +877,46 @@ body
 	.dish__link 
 	&.dish_mod
 		margin-bottom: 35px
+	&.dish_noncha
+		margin-bottom: 30px
+		padding: 0
+		+box-shadow(none)
+		.dish__info
+			top: -20px
+			font-size: 18px
+
+//recipes
+.recipes
+	margin-top: 30px
+	height: 280px
+	background: $gray-yellow
+	+clr
+	+sn
+	.recipes__dish
+		float: left
+		padding-top: 236px
+		width: 300px
+		height: 100%
+		+box-shadow(inset 0 -150px 50px -40px rgba(0, 0, 0, 0.7))
+	.recipes__text
+		float: left
+		padding: 27px 30px
+		width: 340px
+		+box
+	.recipes__title
+		font-size: 30px
+		font-weight: 700
+		line-height: 1
+
+//more
+.more
+	margin-top: 30px
+	text-align: center
+
+//
+.by-category
+	margin-bottom: 35px
+	padding: 18px 0 0
+	border-top: 3px solid $light-gray
+	.by-category__tags
+		color: $brown
