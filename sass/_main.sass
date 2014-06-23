@@ -1,2 +1,25 @@
-// Normally mainpage styles
- 
+//clause
+.clause
+	margin: 30px 0
+	padding: 28px
+	font-size: 0
+	border: 3px solid $light-gray
+	+sn
+	.clause__item
+		padding-right: 30px
+		width: 25%
+		vertical-align: top
+		display: inline-block
+		+box
+	.clause__title
+		font-size: 24px
+		font-weight: 700
+	.clause__list
+		li
+			padding: 8px 0
+		a
+			color: $green
+			font-size: 14px
+			text-decoration: none
+			&:hover
+				text-decoration: underline

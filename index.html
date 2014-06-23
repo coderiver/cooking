@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -11,7 +13,500 @@
 
 <!-- BEGIN  out-->
 <div class="out">
-
+	<!-- BEGIN header -->
+	<div class="header">
+		<div class="header__left">
+			<!-- BEGIN list -->
+			<ul class="list">
+				<li class="list__item">
+					<span>Все сайты cooking</span>
+					<ul class="list__block">
+						<li><a href="#">Фоторецепты</a></li>
+						<li><a href="#">Доставка еды</a></li>
+						<li><a href="#">Кейтеринг</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- END list -->
+			<!-- BEGIN soc -->
+			<ul class="header__soc soc">
+				<li class="soc__item"><a class="ico ico_tw" href="#"></a></li>
+				<li class="soc__item"><a class="ico ico_f" href="#"></a></li>
+				<li class="soc__item"><a class="ico ico_r" href="#"></a></li>
+			</ul>
+			<!-- END soc -->
+		</div>
+		<!-- BEGIN header__logo -->
+		<a href="#" class="header__logo logo"><i class="logo__pic ico ico_logo"></i>Cooking.ua</a>
+		<!-- END header__logo -->
+		<div class="header__right">
+			<!-- BEGIN select -->
+			<div class="header__select select js-select">
+				<div class="select__block"><span class="select__text js-select-text">Все разделы</span></div>
+			    <input type="hidden" class="js-select-input" value="0">
+			    <ul class="select__list js-select-list">
+			        <li data-id="0">Все разделы</li>
+			        <li data-id="1">Фоторецепты</li>
+			        <li data-id="2">Вторые блюда</li>
+			        <li data-id="3">Рыбные блюда</li>
+			        <li data-id="4">Салаты</li>
+			        <li data-id="5">Выпечка</li>
+			        <li data-id="6">Десерты</li>
+			        <li data-id="7">Напитки</li>
+			        <li data-id="8">Консервирование</li>
+			        <li data-id="9">Соусы</li>
+			        <li data-id="10">Детская кухня</li>
+			        <li data-id="11">Вегетарианская кухня</li>
+			        <li data-id="12">Здоровое питание</li>
+			        <li data-id="13">Кухни мира</li>
+			    </ul>
+			</div>
+			<!-- END select -->
+			<!-- BEGIN input -->
+			<div class="header__input input">
+				<div class="input__row">
+					<input type="text" placeholder="Хочу приготовить...">
+					<i class="input__pic ico ico_search"></i>
+				</div>
+			</div>
+			<!-- END input -->
+		</div>
+	</div>
+	<!-- END header -->
+	<!-- BEGIN menu -->
+	<ul class="menu">
+		<li class="menu__item"><a href="#">Новинки</a></li>
+		<li class="menu__item"><a href="#">Лучшие рецепты</a></li>
+		<li class="menu__item is-active">
+			<a href="#">Праздничное меню</a>
+			<ul class="menu__list drop is-active">
+				<li class="drop__item"><a href="#">Фоторецепты</a></li>
+				<li class="drop__item"><a href="#">Закуски</a></li>
+				<li class="drop__item"><a href="#">Первые блюда</a></li>
+				<li class="drop__item"><a href="#">Вторые блюда</a></li>
+				<li class="drop__item"><a href="#">Рыбные блюда</a></li>
+				<li class="drop__item"><a href="#">Салаты</a></li>
+				<li class="drop__item"><a href="#">Выпечка</a></li>
+				<li class="drop__item"><a href="#">Десерты</a></li>
+				<li class="drop__item"><a href="#">Выпечка</a></li>
+				<li class="drop__item"><a href="#">Напитки</a></li>
+				<li class="drop__item"><a href="#">Консервирование</a></li>
+				<li class="drop__item"><a href="#">Соусы</a></li>
+				<li class="drop__item"><a href="#">Детская кухня</a></li>
+				<li class="drop__item"><a href="#">Вегетарианская кухня</a></li>
+				<li class="drop__item"><a href="#">Здоровое питание</a></li>
+				<li class="drop__item"><a href="#">Фоторецепты</a></li>
+				<li class="drop__item"><a href="#">Закуски</a></li>
+				<li class="drop__item"><a href="#">Первые блюда</a></li>
+				<li class="drop__item"><a href="#">Вторые блюда</a></li>
+				<li class="drop__item"><a href="#">Рыбные блюда</a></li>
+				<li class="drop__item"><a href="#">Салаты</a></li>
+			</ul>
+		</li>
+		<li class="menu__item is-active">
+			<a href="#">разделы</a>
+			<ul class="menu__list drop is-active">
+				<li class="drop__item"><a href="#">Фоторецепты</a></li>
+				<li class="drop__item"><a href="#">Закуски</a></li>
+				<li class="drop__item"><a href="#">Первые блюда</a></li>
+				<li class="drop__item"><a href="#">Вторые блюда</a></li>
+				<li class="drop__item"><a href="#">Рыбные блюда</a></li>
+				<li class="drop__item"><a href="#">Салаты</a></li>
+				<li class="drop__item"><a href="#">Выпечка</a></li>
+				<li class="drop__item"><a href="#">Десерты</a></li>
+				<li class="drop__item"><a href="#">Выпечка</a></li>
+				<li class="drop__item"><a href="#">Напитки</a></li>
+				<li class="drop__item"><a href="#">Консервирование</a></li>
+				<li class="drop__item"><a href="#">Соусы</a></li>
+				<li class="drop__item"><a href="#">Детская кухня</a></li>
+				<li class="drop__item"><a href="#">Вегетарианская кухня</a></li>
+				<li class="drop__item"><a href="#">Здоровое питание</a></li>
+				<li class="drop__item"><a href="#">Фоторецепты</a></li>
+				<li class="drop__item"><a href="#">Закуски</a></li>
+				<li class="drop__item"><a href="#">Первые блюда</a></li>
+				<li class="drop__item"><a href="#">Вторые блюда</a></li>
+				<li class="drop__item"><a href="#">Рыбные блюда</a></li>
+				<li class="drop__item"><a href="#">Салаты</a></li>
+			</ul>
+		</li>
+		<li class="menu__item"><a href="#">контакты</a></li>
+		<li class="menu__item"><a href="#">Блог</a></li>
+	</ul>
+	<!-- END menu -->
+	<!-- BEGIN l -->
+	<div class="l">
+		<!-- BEGIN container -->
+		<div class="container">
+			<!-- BEGIN l -->
+			<div class="l">
+				<!-- BEGIN l-col1 -->
+				<div class="l-col1">
+					<!-- BEGIN popularly nav -->
+					<ul class="popularly popularly_section nav">
+						<li class="popularly__top">
+							<span class="popularly__row">Популярные</span>
+							<span class="popularly__row popularly__row_mod">разделы</span>
+						</li>
+						<li class="nav__item">
+							<a href="#">Фоторецепты</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Закуски</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Первые блюда</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Вторые блюда</a>
+						</li>
+						<li class="nav__item is-active">
+							<a href="#">Рыбные блюда</a>
+							<ul class="nav__list drop drop_fish is-active">
+								<li class="drop__item"><a href="#">Фоторецепты</a></li>
+								<li class="drop__item"><a href="#">Закуски</a></li>
+								<li class="drop__item"><a href="#">Первые блюда</a></li>
+								<li class="drop__item"><a href="#">Вторые блюда</a></li>
+								<li class="drop__item"><a href="#">Рыбные блюда</a></li>
+								<li class="drop__item"><a href="#">Салаты</a></li>
+								<li class="drop__item"><a href="#">Выпечка</a></li>
+								<li class="drop__item"><a href="#">Десерты</a></li>
+								<li class="drop__item"><a href="#">Выпечка</a></li>
+								<li class="drop__item"><a href="#">Напитки</a></li>
+								<li class="drop__item"><a href="#">Консервирование</a></li>
+								<li class="drop__item"><a href="#">Соусы</a></li>
+								<li class="drop__item"><a href="#">Детская кухня</a></li>
+								<li class="drop__item"><a href="#">Вегетарианская кухня</a></li>
+								<li class="drop__item"><a href="#">Здоровое питание</a></li>
+							</ul>
+						</li>
+						<li class="nav__item is-active">
+							<a href="#">Салаты</a>
+							<ul class="nav__list drop is-active">
+								<li class="drop__item"><a href="#">Фоторецепты</a></li>
+								<li class="drop__item"><a href="#">Закуски</a></li>
+								<li class="drop__item"><a href="#">Первые блюда</a></li>
+								<li class="drop__item"><a href="#">Вторые блюда</a></li>
+								<li class="drop__item"><a href="#">Рыбные блюда</a></li>
+								<li class="drop__item"><a href="#">Салаты</a></li>
+								<li class="drop__item"><a href="#">Выпечка</a></li>
+								<li class="drop__item"><a href="#">Десерты</a></li>
+								<li class="drop__item"><a href="#">Выпечка</a></li>
+								<li class="drop__item"><a href="#">Напитки</a></li>
+								<li class="drop__item"><a href="#">Консервирование</a></li>
+								<li class="drop__item"><a href="#">Соусы</a></li>
+								<li class="drop__item"><a href="#">Детская кухня</a></li>
+								<li class="drop__item"><a href="#">Вегетарианская кухня</a></li>
+								<li class="drop__item"><a href="#">Здоровое питание</a></li>
+							</ul>
+						</li>
+						<li class="nav__item">
+							<a href="#">Выпечка</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Десерты</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Напитки</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Консервирование</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Соусы</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Детская кухня</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Вегетарианская кухня</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Здоровое питание</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Кухни мира</a>
+						</li>
+					</ul>
+					<!-- END popularly nav -->
+					<!-- BEGIN banner -->
+					<a href="#" class="banner">
+						<img src="img/banner1.png" alt="img">
+					</a>
+					<!-- END banner -->
+					<!-- BEGIN rating -->
+					<div class="rating">
+						<div class="rating__top">топ</div>
+						<div class="rating__title">10 рецептов лета</div>
+						<ul class="rating__list">
+							<li class="rating__item"><span>1</span><a href="#">Жульен с грибами</a></li>
+							<li class="rating__item"><span>2</span><a href="#">Горячий шоколад с перцем чили</a></li>
+							<li class="rating__item"><span>3</span><a href="#">Спагетти по-итальянски</a></li>
+							<li class="rating__item"><span>4</span><a href="#">Салат из пекинской капусты</a></li>
+							<li class="rating__item"><span>5</span><a href="#">Салат из краснокочанной капусты и кукурузы</a></li>
+							<li class="rating__item"><span>6</span><a href="#">Жульен с грибами</a></li>
+							<li class="rating__item"><span>7</span><a href="#">Жульен с грибами</a></li>
+							<li class="rating__item"><span>8</span><a href="#">Жульен с грибами</a></li>
+							<li class="rating__item"><span>9</span><a href="#">Жульен с грибами</a></li>
+							<li class="rating__item"><span>10</span><a href="#">Жульен с грибами</a></li>
+						</ul>
+					</div>
+					<!-- END rating -->
+					<!-- BEGIN Discussion -->
+					<div class="discussion">
+						<div class="discussion__title">Что обсуждают наши читатели</div>
+						<div class="discussion__wrap">
+							<div class="discussion__item">
+								<a href="#" class="discussion__user">Вайнона</a>
+								<div class="discussion__date date">20:11 30.12.2011</div>
+								<div class="discussion__text">хочу добавить,что в Цезарь(настоящий)желательно листья салата Айсберг и в заправку добави... <a class="discussion__link" href="#">Читать &rarr;</a></div>
+								<a href="#" class="discussion__object">
+									<div class="discussion__img"><img src="http://lorempixel.com/50/46/food" alt="img"></div>
+									<div class="discussion__block">Спагетти <br>по-итальянски</div>
+								</a>
+							</div>
+							<div class="discussion__item">
+								<a href="#" class="discussion__user">Вайнона</a>
+								<div class="discussion__date date">20:11 30.12.2011</div>
+								<div class="discussion__text">хочу добавить,что в Цезарь(настоящий)желательно листья салата Айсберг и в заправку добави... <a class="discussion__link" href="#">Читать &rarr;</a></div>
+								<a href="#" class="discussion__object">
+									<div class="discussion__img"><img src="http://lorempixel.com/50/46/food" alt="img"></div>
+									<div class="discussion__block">Салат цезарь с курицей</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- END Discussion -->
+				</div>
+				<!-- END l-col1 -->
+				<!-- BEGIN l-col2 -->
+				<div class="l-col2">
+					<!-- BEGIN dish -->
+					<div class="dish dish_mod" style="height:420px;background: url(http://lorempixel.com/640/420/food) no-repeat 50% 0">
+						<div class="dish__info"><span>Рецепт дня</span></div>
+						<div class="dish__title">Зелёный салат с огурцами и сёмгой</div>
+						<div class="dish__row row">
+							<a href="#" class="dish__link link">Салаты из морепродуктов</a>
+							<a href="#" class="dish__link link">Фото рецепты</a>
+						</div>
+						<p><strong>Ингредиенты:</strong> листья салата, 2 огурца, 300г филе сёмги,  лимон, 3ст.л. соевого соуса, 1ч.л. коричневого сахара. соль, перец, растительное масло. <a href="#" class="dish__read read">Читать рецепт полностью &rarr;</a></p>
+						<div class="dish__row row">
+							<div class="dish__col">
+								<strong>Теги:</strong>
+								<a href="#" class="dish__tags tags">морковка</a>
+								<a href="#" class="dish__tags tags">колбаса</a>
+								<a href="#" class="dish__tags tags">салями</a>
+								<a href="#" class="dish__tags tags">мучное</a>
+								<a href="#" class="dish__tags tags">быстро</a>
+							</div>
+							<div class="dish__comment comment comment_grey">12 комментариев
+								<i class="ico ico_comment"></i>
+							</div>
+						</div>
+					</div>
+					<!-- END dish -->
+					<!-- BEGIN title -->
+					<div class="title title_center"><span>Свежие кулинарные рецепты</span></div>
+					<!-- END title -->
+				</div>
+				<!-- END l-col2 -->
+			</div>
+			<!-- END l -->
+			<!-- BEGIN clause -->
+			<div class="clause">
+				<div class="clause__item">
+					<h3 class="clause__title">Первые блюда</h3>
+					<ul class="clause__list">
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+					</ul>
+				</div>
+				<div class="clause__item">
+					<h3 class="clause__title">Первые блюда</h3>
+					<ul class="clause__list">
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Блинчики с луком-пореем и яйцом</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Голубцы, фаршированные овощами</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+					</ul>
+				</div>
+				<div class="clause__item">
+					<h3 class="clause__title">Выпечка</h3>
+					<ul class="clause__list">
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+					</ul>
+				</div>
+				<div class="clause__item">
+					<h3 class="clause__title">Выпечка</h3>
+					<ul class="clause__list">
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+						<li><a href="#">Бульон с мучными клецками</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- END clause -->
+			<!-- BEGIN info -->
+			<div class="info">
+				<h3 class="info__title">Информация о сайте Cooking.ua</h3>
+				<p>Вкусная еда – величайшее удовольствие, от которого невозможно отказаться. А приготовление блюд – это процесс, который требует как определенных знаний, так и творческого подхода. Вы хотите овладеть секретами и гастрономическими традициями национальных кухонь? Расширить кулинарный кругозор новыми вкусными рецептами? Узнать тонкости приготовления самых разнообразных блюд? В таком случае наш сайт – для Вас.</p>
+				<p>На cooking.ua Вы найдете кулинарные рецепты национальных кухонь, собранные со всех уголков мира, которые Вы легко сможете приготовить у себя дома. От классических до изысканных первых блюд, заканчивая легкими и поистине королевскими десертами. А разнообразие рецептов блюд из мяса, птицы, рыбы способно удовлетворить желания любого гурмана.</p>
+			</div>
+			<!-- END info -->
+		</div>
+		<!-- END container -->
+		
+		<!-- BEGIN l-col3 -->
+		<div class="l-col3">
+			<!-- BEGIN delivery -->
+			<div class="delivery">
+				<h3 class="delivery__title">Подписаться на рассылку</h3>
+				<p>Получайте новые  рецепты прямо на свою электронную почту</p>
+				<div class="input">
+					<div class="input__row"><input type="text" placeholder="Введите ваш e-mail"></div>
+				</div>
+				<butoon class="btn btn_green">Подписаться</butoon>
+			</div>
+			<!-- END delivery -->
+			<!-- BEGIN banner -->
+			<a href="#" class="banner">
+				<img src="img/banner2.png" alt="img">
+			</a>
+			<!-- END banner -->
+			<!-- BEGIN popularly -->
+			<div class="popularly popularly_recipes">
+				<div class="popularly__top">
+					<span class="popularly__row">Популярные</span>
+					<span class="popularly__row popularly__row_mod">рецепты</span>
+				</div>
+				<div class="popularly__col">
+					<a href="#" class="popularly__img">
+						<img src="http://lorempixel.com/90/82/food" alt="img">
+					</a>
+					<div class="popularly__block">
+						<div class="popularly__title">Деруны</div>
+						<a href="#" class="popularly__link read">Читать рецепт &rarr;</a>
+						<div class="comment comment_grey">33
+							<i class="ico ico_comment"></i>
+						</div>
+					</div>
+				</div>
+				<div class="popularly__col">
+					<a href="#" class="popularly__img">
+						<img src="http://lorempixel.com/90/82/food" alt="img">
+					</a>
+					<div class="popularly__block">
+						<div class="popularly__title">Пикантный салат с крабовыми палочками и помидорами</div>
+						<a href="#" class="popularly__link read">Читать рецепт &rarr;</a>
+						<div class="comment comment_grey">33
+							<i class="ico ico_comment"></i>
+						</div>
+					</div>
+				</div>
+				<div class="popularly__col">
+					<a href="#" class="popularly__img">
+						<img src="http://lorempixel.com/90/82/food" alt="img">
+					</a>
+					<div class="popularly__block">
+						<div class="popularly__title">Деруны</div>
+						<a href="#" class="popularly__link read">Читать рецепт &rarr;</a>
+						<div class="comment comment_grey">33
+							<i class="ico ico_comment"></i>
+						</div>
+					</div>
+				</div>
+				<div class="popularly__col">
+					<a href="#" class="popularly__img">
+						<img src="http://lorempixel.com/90/82/food" alt="img">
+					</a>
+					<div class="popularly__block">
+						<div class="popularly__title">Деруны</div>
+						<a href="#" class="popularly__link read">Читать рецепт &rarr;</a>
+						<div class="comment comment_grey">33
+							<i class="ico ico_comment"></i>
+						</div>
+					</div>
+				</div>
+				<div class="popularly__col">
+					<a href="#" class="popularly__img">
+						<img src="http://lorempixel.com/90/82/food" alt="img">
+					</a>
+					<div class="popularly__block">
+						<div class="popularly__title">Деруны</div>
+						<a href="#" class="popularly__link read">Читать рецепт &rarr;</a>
+						<div class="comment comment_grey">33
+							<i class="ico ico_comment"></i>
+						</div>
+					</div>
+				</div>
+				<div class="popularly__col">
+					<a href="#" class="popularly__img">
+						<img src="http://lorempixel.com/90/82/food" alt="img">
+					</a>
+					<div class="popularly__block">
+						<div class="popularly__title">Деруны</div>
+						<a href="#" class="popularly__link read">Читать рецепт &rarr;</a>
+						<div class="comment comment_grey">33
+							<i class="ico ico_comment"></i>
+						</div>
+					</div>
+				</div>
+				<div class="popularly__col">
+					<a href="#" class="popularly__img">
+						<img src="http://lorempixel.com/90/82/food" alt="img">
+					</a>
+					<div class="popularly__block">
+						<div class="popularly__title">Деруны</div>
+						<a href="#" class="popularly__link read">Читать рецепт &rarr;</a>
+						<div class="comment comment_grey">33
+							<i class="ico ico_comment"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END popularly -->
+			<!-- BEGIN banner -->
+			<a href="#" class="banner">
+				<img src="img/banner3.png" alt="img">
+			</a>
+			<a href="#" class="banner">
+				<img src="img/banner4.png" alt="img">
+			</a>
+			<a href="#" class="banner">
+				<img src="img/banner5.png" alt="img">
+			</a>
+			<!-- END banner -->
+		</div>
+		<!-- END l-col3 -->
+	</div>
+	<!-- END l -->
+	<!-- BEGIN footer -->
+	<div class="footer">
+		<div class="footer__logo logo ico ico_f-logo"></div>
+		<div class="copyright">
+			<p>&copy; Cooking.ua 2010 - 2014. Кулинарные фото рецепты. Все права защищены.</p>
+			<p>При использовании материалов сайта интернет-изданиями, прямая, активная гиперссылка, индексируемая поисковыми системами, указывающая на главную страницу веб-сайта <a href="#">www.Cooking.ua</a> обязательна.</p>
+		</div>
+		<div class="footer__right">
+			<ul class="soc">
+				<li class="soc__item"><a href="#" class="ico ico_tw-white"></a></li>
+				<li class="soc__item"><a href="#" class="ico ico_f-white"></a></li>
+				<li class="soc__item"><a href="#" class="ico ico_r-white"></a></li>
+			</ul>
+			<p>Cooking <sup><small>тм</small></sup> - пошаговые фото рецепты</p>
+		</div>
+	</div>
+	<!-- END footer -->
 </div>
 <!-- END out-->
 
